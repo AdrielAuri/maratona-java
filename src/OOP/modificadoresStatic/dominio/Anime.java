@@ -1,11 +1,16 @@
 package OOP.modificadoresStatic.dominio;
 
 public class Anime {
-    //0 - Bloco de inicialização é executado quando a JVM carregar a classe
-    //1 - Alocado espaço em memoria pro objeto
-    //2 - Cada atributo de classe é criado e inicialzado com valores defalut ou o que for passado
-    //3 - Bloco de inicialização é executado
-    //4 - Construtor é executado
+    //0 - Bloco de inicialização static da superclass é executado quando a JVM carregar a classe pai
+    //1 - Bloco de inicialização static da subclass é executado quando a JVM carregar a classe filha
+    //2 - Alocado espaço em memoria pro objeto da superclass
+    //3 - Cada atributo da superclass é criado e inicialzado com valores defalut ou o que for passado
+    //5 - Bloco de inicialização da superclass é executado na ordem em que aparece
+    //5 - Construtor é executado na superclass
+    //6 - Alocado espaço em memoria pro objeto da subclass
+    //7 - Cada atributo da subclass é criado e inicialzado com valores defalut ou o que for passado
+    //8 - Bloco de inicialização da subclass é executado na ordem em que aparece
+    //9 - Construtor é executado na subclass
 
     private String nome;
     private static int[] episodios;

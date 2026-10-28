@@ -11,7 +11,7 @@ public enum TipoPagamento {
         public double calcularDesconto(double valor) {
             return valor * 0.05;
         }
-    };
+    } ;
 
         public abstract double calcularDesconto(double valor);
 }

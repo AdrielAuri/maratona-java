@@ -1,4 +1,4 @@
-package OOP.exception.testes;
+package OOP.exception.error.testes;
 
 public class StackOverFlowTest01 {
     static void main(String[] args) {
